@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.{{moduleTitleId}}
+metadata:
+  title: {{moduleTitle}}
+  description: "" # TODO: Create module description.
+  ms.date: {{modulePublishDate}}
+  author: {{moduleAuthorGitHubId}}
+  ms.author: {{moduleAuthorMicrosoftId}}
+  ms.topic: interactive-tutorial
+  ms.prod: {{moduleMsProdValue}}
+  #ms.learn-contact: {{moduleLearnContactMicrosoftId}} # TODO: Update support contact.
+title: {{moduleTitle}}
+summary: "" # TODO: Create module summary.
+abstract: |
+  In this module, you will:
+  - Create something # TODO: Update task-based module objectives.
+  - Perform something # TODO: Update task-based module objectives.
+  - Run something # TODO: Update task-based module objectives.
+prerequisites: |
+  - Have an understanding of something # TODO: Update task-based module prerequisites.
+iconUrl: {{moduleBadgeIconUrl}}
+levels:
+- {{moduleLevel}}
+roles:
+- {{moduleFirstRole}}
+# - other-roles (pick from allowed values: https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+products:
+- {{moduleFirstProduct}}
+- {{moduleSecondProduct}}
+# - other-products (pick from allowed values: https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#learn-product)
+units:
+- learn.{{moduleTitleId}}.1-introduction
+# TODO: Add rest of module unit IDs (and corresponding x.yml and includes/x.md files).
+# - learn.{{moduleTitleId}}.2-unit-name
+# ..
+- learn.{{moduleTitleId}}.6-summary
+achievement: learn.{{moduleTitleId}}.badge

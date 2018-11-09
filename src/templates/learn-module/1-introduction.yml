@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.{{moduleTitleId}}.1-introduction
+metadata:
+  title: Introduction
+  description: "" # TODO: Create module description.
+  ms.date: {{modulePublishDate}}
+  author: {{moduleAuthorGitHubId}}
+  ms.author: {{moduleAuthorMicrosoftId}}
+  ms.topic: interactive-tutorial
+  ms.prod: {{moduleMsProdValue}}
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

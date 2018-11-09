@@ -1,0 +1,6 @@
+# TODO: Append the following lines to the achievements.yml file in your content repo (usually in the root level).
+- uid: "learn.{{moduleTitleId}}.badge"
+  type: "badge"
+  title: "{{moduleTitle}}"
+  summary: "{{moduleTitle}}"
+  iconUrl: "{{moduleBadgeIconUrl}}"
