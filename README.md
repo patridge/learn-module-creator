@@ -21,8 +21,8 @@ This extension will create a base folder structure of YAML and Markdown content,
   * 1-introduction.yml
   * 6-summary.yml
   * /includes/
-    * 1-introduction.md
-    * 6-summary.md
+    * 1-introduction<span/>.md
+    * 6-summary<span/>.md
 
 While you will want a module summary, do not feel obliged to keep it as the sixth unit in your module. Just remember to renumber the YAML and Markdown files as well as the ID in the index.yml and the 6-summary.yml files, if you do.
 
