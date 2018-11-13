@@ -4,12 +4,22 @@
     "description": "A Visual Studio Code extension to create the initial structure for new Microsoft Learn modules.",
     "version": "0.0.1",
     "publisher": "patridgedev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/patridge/learn-module-creator.git"
+    },
+    "homepage": "https://github.com/patridge/learn-module-creator/blob/master/README.md",
+    "license": "https://github.com/patridge/learn-module-creator/blob/master/LICENSE",
+    "bugs": {
+        "url": "https://github.com/patridge/learn-module-creator/issues"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
     "categories": [
         "Other"
     ],
+    "keywords": [ "template", "Microsoft Learn" ],
     "contributes": {
         "commands": [
             {
