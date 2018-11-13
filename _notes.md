@@ -6,7 +6,7 @@ Generate a Microsoft Learn module boilerplate structure with user input and sens
 
 ## Next
 
-* Figure out why VS Code accepts inputs when changing focus (or doing just about anything)
+* ~~Figure out why VS Code accepts inputs when changing focus (or doing just about anything)~~ `ignoreFocusOut`!
 * More error handling
 * More denodifying
 

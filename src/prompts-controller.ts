@@ -11,7 +11,8 @@ export default class PromptsController {
         async (promptResults: LearnModuleModel) => {
             promptResults.moduleTitle = (await window.showInputBox({
                 prompt: "What\'s the title for your module (with appropriate capitalization and spaces)?",
-                validateInput: validators.validateNonEmpty
+                validateInput: validators.validateNonEmpty,
+                ignoreFocusOut: true,
             })) || ""; // Shouldn't be empty after validator, but not sure how to let TypeScript know that.
             promptResults.moduleId = StringHelpers.convertToLearnId(promptResults.moduleTitle);
         },
@@ -20,7 +21,8 @@ export default class PromptsController {
             promptResults.modulePublishDate = (await window.showInputBox({
                 prompt: "What\'s the publish date of this module (\"MM/dd/yyyy\")?",
                 value: defaultValue,
-                validateInput: validators.validatePublishDateString
+                validateInput: validators.validatePublishDateString,
+                ignoreFocusOut: true,
             })) || defaultValue; // Shouldn't be empty after validator, but not sure how to let TypeScript know that.
         },
         async (promptResults: LearnModuleModel) => {
@@ -28,20 +30,24 @@ export default class PromptsController {
             promptResults.moduleBadgeIconUrl = (await window.showInputBox({
                 prompt: "What\'s the URL of your module\'s badge icon?",
                 value: defaultValue,
+                ignoreFocusOut: true,
             })) || defaultValue; // Shouldn't be empty after validator, but not sure how to let TypeScript know that.
         },
         async (promptResults: LearnModuleModel) => {
             promptResults.moduleAuthorGitHubId = (await window.showInputBox({
                 prompt: "What\'s the GitHub username for the author?",
+                ignoreFocusOut: true,
             })) || ""; // Shouldn't be empty after validator, but not sure how to let TypeScript know that.
         },
         async (promptResults: LearnModuleModel) => {
             promptResults.moduleAuthorMicrosoftId = (await window.showInputBox({
                 prompt: "What\'s the Microsoft username for the author?",
+                ignoreFocusOut: true,
             })) || ""; // Shouldn't be empty after validator, but not sure how to let TypeScript know that.
             promptResults.moduleLearnContactMicrosoftId = (await window.showInputBox({
                 prompt: "What\'s the Microsoft username for the Learn team maintainer?",
                 value: promptResults.moduleAuthorMicrosoftId,
+                ignoreFocusOut: true,
             })) || ""; // Shouldn't be empty after validator, but not sure how to let TypeScript know that.
         },
         async (promptResults: LearnModuleModel) => {
@@ -58,6 +64,7 @@ export default class PromptsController {
                 {
                     canPickMany: false,
                     placeHolder: "Select a Microsoft Product value",
+                    ignoreFocusOut: true,
                 }
             )) || "";
         },
@@ -71,6 +78,7 @@ export default class PromptsController {
                 {
                     canPickMany: false,
                     placeHolder: "Select a module level",
+                    ignoreFocusOut: true,
                 }
             )) || "";
         },
@@ -87,6 +95,7 @@ export default class PromptsController {
                 {
                     canPickMany: false,
                     placeHolder: "Select a first module role (others added manually)",
+                    ignoreFocusOut: true,
                 }
             )) || "";
         },
@@ -101,6 +110,7 @@ export default class PromptsController {
                 {
                     canPickMany: false,
                     placeHolder: "Select first module product (others added manually)",
+                    ignoreFocusOut: true,
                 }
             )) || "";
             promptResults.moduleSecondProduct = (await window.showQuickPick(
@@ -144,6 +154,7 @@ export default class PromptsController {
                 {
                     canPickMany: false,
                     placeHolder: "Select second module product (others added manually)",
+                    ignoreFocusOut: true,
                 }
             )) || "";
         },
