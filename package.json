@@ -3,7 +3,7 @@
     "displayName": "Microsoft Learn module creator",
     "description": "A Visual Studio Code extension to create the initial structure for new Microsoft Learn modules.",
     "version": "0.0.1",
-    "publisher": "patridge",
+    "publisher": "patridgedev",
     "engines": {
         "vscode": "^1.27.0"
     },
