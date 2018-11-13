@@ -19,7 +19,10 @@
     "categories": [
         "Other"
     ],
-    "keywords": [ "template", "Microsoft Learn" ],
+    "keywords": [
+        "template",
+        "Microsoft Learn"
+    ],
     "contributes": {
         "commands": [
             {
@@ -40,11 +43,11 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.37",
         "tslint": "^5.8.0",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21"
     },
     "dependencies": {
         "@types/handlebars": "^4.0.39",
