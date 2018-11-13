@@ -5,18 +5,19 @@ import {
 } from 'vscode';
 import * as path from 'path'; // via Node.js
 import * as fs from 'fs'; // via Node.js
-import * as mkdirpImport from 'mkdirp'; // via npm:mkdirp
 import * as Handlebars from "handlebars"; // via npm:handlebars
-import { denodeify, reject, resolve } from 'q';
 import PromptsController from "./prompts-controller";
 import LearnModuleModel from './learn-module-model';
+import { denodeify } from 'q';
 
-// const mkdir = denodeify(mkdirp);
 const appendFile = denodeify(fs.appendFile);
 const fsStat = denodeify(fs.stat);
 const fsReadFile = denodeify(fs.readFile);
 const fsMkDir = denodeify(fs.mkdir);
-const mkdirp = denodeify(mkdirpImport);
+
+// Possible option for recursive mkdir?
+// import * as mkdirpImport from 'mkdirp'; // via npm:mkdirp
+// const mkdirp = denodeify(mkdirpImport);
 
 export default class FileController {
     constructor(readonly extensionPath: string) { }
