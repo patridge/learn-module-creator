@@ -28,6 +28,7 @@ While you will want a module summary, do not feel obliged to keep it as the sixt
 
 ## History
 
+* 0.2.0: Fixed [event-stream vulnerability](https://code.visualstudio.com/blogs/2018/11/26/event-stream), and updated any npm packages as a result.
 * 0.1.0: Generates the basic scaffolding for a new Microsoft Learn module.
 
 ## License

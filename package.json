@@ -2,7 +2,7 @@
     "name": "learn-module-creator",
     "displayName": "Microsoft Learn module creator",
     "description": "A Visual Studio Code extension to create the initial structure for new Microsoft Learn modules.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "patridgedev",
     "repository": {
         "type": "git",
